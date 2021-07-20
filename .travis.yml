@@ -6,7 +6,7 @@ before_install:
 script:
   - echo "$password" | docker login -u "$username" --password-stdin
   - docker images
-  - docker push "$username"/autoclass1:v1.0
+  - docker push peegee2020/autoclass1:v1.0
 notifications:
   email:
     recipients:
